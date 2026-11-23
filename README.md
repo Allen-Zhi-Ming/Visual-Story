@@ -128,3 +128,22 @@ The workflow was independently implemented from high-level ideas demonstrated in
 <b>VISUAL STORY</b> · <i>From imagination to interaction.</i>
 <br/><sub>Build visuals. Tell stories. Ship real interfaces.</sub>
 </div>
+
+## Three interactive showcases · P1
+
+These are **original, fictional, functioning concept pages**, not client projects, AI-generated product photos or real stores. Each has an English-default interface with Simplified and Traditional Chinese choices.
+
+| Demonstration | Interaction | Source |
+| --- | --- | --- |
+| [ECHO — Character Portfolio](community/assets/starter-site/showcase/character.html) | Scene + pose switching | Self-contained vector concept |
+| [VALE — Brand Experience](community/assets/starter-site/showcase/brand.html) | Three editorial collection states | CSS design object |
+| [AURA — Product Showcase](community/assets/starter-site/showcase/product.html) | Color, size, quantity + local demo bag | Original SVG jacket; **no checkout** |
+
+## Deployment and quality gates · P0/P2
+
+- [Vercel deployment](https://visual-story-six.vercel.app/) — Git-connected static site (live reachability must be verified independently).
+- [Automated quality workflow](.github/workflows/quality.yml) — runs on pull requests and pushes to `main`.
+- [Browser tests](tests/browser_smoke.py) — responsive 320/390/768/1440 px, three locales, page transitions and interactions.
+- [Static integrity tests](tests/static_integrity.py) — asset references, no dead links, translation keys and pages.
+- [Release checklist](docs/RELEASE-GATES.md) — what is and is not enforced by GitHub/Vercel.
+

@@ -1,0 +1,64 @@
+{
+  "project_name": "NOVA／視覺敘事展示（示範專案）",
+  "project_type": "character-portfolio",
+  "language": "zh-Hant",
+  "purpose": "原創角色與視覺作品展示；本設定為範例，不代表真實客戶或專案。",
+  "audience": "對視覺設計及原創 3D 角色有興趣的訪客",
+  "brand": {
+    "voice": "未來感、克制、有個性",
+    "primary": "#cbff76",
+    "background": "#070b12",
+    "foreground": "#f3f5f2",
+    "secondary": "#9da4b6",
+    "font": "system-ui"
+  },
+  "character_lock": {
+    "identity": "示範角色；實際專案須由原始圖片建立",
+    "fixed_traits": [
+      "臉與身體比例",
+      "主要服裝剪裁",
+      "髮型形狀",
+      "固定配件與鞋型"
+    ],
+    "variable_traits": [
+      "光源",
+      "背景",
+      "表情（在允許範圍內）",
+      "姿勢"
+    ],
+    "source_assets": []
+  },
+  "pages": [
+    "首頁",
+    "作品展示",
+    "創作方式",
+    "關於"
+  ],
+  "scenes": [
+    {
+      "id": "hero",
+      "goal": "首屏定位",
+      "aspect_desktop": "16:9",
+      "aspect_mobile": "9:16",
+      "asset_path": null,
+      "status": "NOT_GENERATED",
+      "text_safe_zone": "left"
+    },
+    {
+      "id": "gallery",
+      "goal": "作品導覽",
+      "aspect_desktop": "4:3",
+      "aspect_mobile": "4:5",
+      "asset_path": null,
+      "status": "NOT_GENERATED",
+      "text_safe_zone": "outside"
+    }
+  ],
+  "nonnegotiables": [
+    "保留原始素材",
+    "所有互動需真實可操作",
+    "mobile first",
+    "prefers-reduced-motion"
+  ],
+  "publishing_authorized": false
+}

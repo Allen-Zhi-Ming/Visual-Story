@@ -1,0 +1,4 @@
+interface:
+  display_name: "視覺敘事網站製作"
+  short_description: "角色與視覺素材 → 動態 RWD 網站"
+  default_prompt: "使用 $visual-story-site，根據我提供的角色、品牌素材與參考圖片，製作風格一致、手機與桌面都可操作的動態網站，並完成驗收。"

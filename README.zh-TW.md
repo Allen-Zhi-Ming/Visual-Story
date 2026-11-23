@@ -128,3 +128,15 @@ Visual Story Community 是 **source-available 公開預覽**，尚未套用 MIT�
 <b>VISUAL STORY</b> · <i>From imagination to interaction.</i>
 <br/><sub>讓視覺說故事，交付真正可用的介面。</sub>
 </div>
+
+## 三個互動示範與品質檢查 · P0–P2
+
+ECHO 角色作品集可切換場景與姿勢；VALE 品牌形象可切換系列；AURA 商品展示可選擇顏色、尺寸、數量與示範購物袋（不含付款及出貨）。三個案例皆為原創虛構展示，英文預設並支援簡體／繁體。
+
+- [ECHO — Character](community/assets/starter-site/showcase/character.html)
+- [VALE — Brand](community/assets/starter-site/showcase/brand.html)
+- [AURA — Product](community/assets/starter-site/showcase/product.html)
+- [Vercel 展示网址](https://visual-story-six.vercel.app/)
+- [自动测试流程](.github/workflows/quality.yml)
+- [验收与发布规则](docs/RELEASE-GATES.md)
+

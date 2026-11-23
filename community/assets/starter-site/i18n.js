@@ -127,14 +127,14 @@ const VISUAL_STORY_TRANSLATIONS = {
     "zh-CN": "从单一主视觉延伸出连贯的角色宇宙，让网站的每个区域都属于同一个故事。"
   },
   "workTitle": {
-    "en": "EXPERIMENTAL <span class=\"accent\">VISUALS</span>",
-    "zh-TW": "實驗性的<span class=\"accent\">視覺語言</span>",
-    "zh-CN": "实验性的<span class=\"accent\">视觉语言</span>"
+    "en": "EXPLORE <span class=\"accent\">LIVE CONCEPTS</span>",
+    "zh-TW": "探索<span class=\"accent\">互動案例</span>",
+    "zh-CN": "探索<span class=\"accent\">交互案例</span>"
   },
   "workNote": {
-    "en": "Original concept studies included with this skill. Not client work.",
-    "zh-TW": "以下皆為技能內建的原創概念示範，非客戶案例。",
-    "zh-CN": "以下均为技能内置的原创概念演示，并非客户案例。"
+    "en": "Three original interactive website demos. Not client projects.",
+    "zh-TW": "三個可操作的原創網站案例，並非真實客戶專案。",
+    "zh-CN": "三个可交互的原创网站案例，并非真实客户项目。"
   },
   "filterAria": {
     "en": "Filter projects",
@@ -162,34 +162,34 @@ const VISUAL_STORY_TRANSLATIONS = {
     "zh-CN": "动态"
   },
   "card1Label": {
-    "en": "CHARACTER / IDENTITY",
-    "zh-TW": "角色／識別",
-    "zh-CN": "角色／识别"
+    "en": "CHARACTER / PORTFOLIO",
+    "zh-TW": "角色／作品集",
+    "zh-CN": "角色／作品集"
   },
   "card1Desc": {
-    "en": "Build consistent characters across scenes through proportions, color and form.",
-    "zh-TW": "以比例、色彩與形體建立跨場景一致的角色系統。",
-    "zh-CN": "以比例、色彩与形体打造跨场景一致的角色系统。"
+    "en": "Change scenes and poses in an original character universe.",
+    "zh-TW": "切換不同場景與姿勢，探索原創角色作品集。",
+    "zh-CN": "切换不同场景与姿势，探索原创角色作品集。"
   },
   "card2Label": {
-    "en": "SCENES / ATMOSPHERE",
-    "zh-TW": "場景／氣氛",
-    "zh-CN": "场景／氛围"
+    "en": "BRAND / CAMPAIGN",
+    "zh-TW": "品牌／形象網站",
+    "zh-CN": "品牌／形象网站"
   },
   "card2Desc": {
-    "en": "Use light, materials and composition to establish emotion and narrative.",
-    "zh-TW": "用光線、材質與構圖讓畫面有明確情緒和敘事。",
-    "zh-CN": "运用光线、材质与构图，让画面具有明确的情绪与叙事。"
+    "en": "Explore an editorial campaign with real collection switching.",
+    "zh-TW": "以可切換系列的編輯式網站展示品牌形象。",
+    "zh-CN": "以可切换系列的编辑式网站展示品牌形象。"
   },
   "card3Label": {
-    "en": "INTERACTION / MOTION",
-    "zh-TW": "互動／節奏",
-    "zh-CN": "互动／节奏"
+    "en": "PRODUCT / COMMERCE DEMO",
+    "zh-TW": "商品／互動展示",
+    "zh-CN": "商品／交互展示"
   },
   "card3Desc": {
-    "en": "Communicate motion through controllable web interactions while preserving a static fallback.",
-    "zh-TW": "以可控制的網頁互動呈現動勢，並保留靜態體驗。",
-    "zh-CN": "通过可控的网页交互呈现动感，并保留静态体验。"
+    "en": "Try colors, sizes and a working demo bag. No checkout.",
+    "zh-TW": "試選顏色、尺寸與示範購物袋，不提供結帳。",
+    "zh-CN": "试选颜色、尺码与演示购物袋，不提供结账。"
   },
   "emptyState": {
     "en": "Nothing in this category yet.",
@@ -265,6 +265,31 @@ const VISUAL_STORY_TRANSLATIONS = {
     "en": "VISUAL STORY SITE / ORIGINAL STARTER DEMO",
     "zh-TW": "VISUAL STORY SITE / 原創示範網站",
     "zh-CN": "VISUAL STORY SITE / 原创演示网站"
+  },
+  "filterBrand": {
+    "en": "Brands",
+    "zh-TW": "品牌",
+    "zh-CN": "品牌"
+  },
+  "filterProduct": {
+    "en": "Products",
+    "zh-TW": "商品",
+    "zh-CN": "商品"
+  },
+  "card1Open": {
+    "en": "Open interactive demo ↗",
+    "zh-TW": "進入互動示範 ↗",
+    "zh-CN": "进入交互演示 ↗"
+  },
+  "card2Open": {
+    "en": "Open interactive demo ↗",
+    "zh-TW": "進入互動示範 ↗",
+    "zh-CN": "进入交互演示 ↗"
+  },
+  "card3Open": {
+    "en": "Open interactive demo ↗",
+    "zh-TW": "進入互動示範 ↗",
+    "zh-CN": "进入交互演示 ↗"
   }
 };
 const VISUAL_STORY_LOCALES = ["en", "zh-CN", "zh-TW"];

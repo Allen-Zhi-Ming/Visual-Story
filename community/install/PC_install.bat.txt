@@ -1,0 +1,35 @@
+@echo off
+setlocal
+set "SKILL_SOURCE=%~dp0.."
+if not exist "%SKILL_SOURCE%\SKILL.md" (
+  echo [ERROR] SKILL.md not found. Extract the ZIP first.
+  pause
+  exit /b 1
+)
+if defined CODEX_HOME (
+  set "SKILLS_DIR=%CODEX_HOME%\skills"
+) else (
+  set "SKILLS_DIR=%USERPROFILE%\.codex\skills"
+)
+set "SKILL_DEST=%SKILLS_DIR%\visual-story-site"
+if exist "%SKILL_DEST%\SKILL.md" (
+  echo [STOP] Skill exists at "%SKILL_DEST%".
+  echo Rename the existing folder or back it up before updating.
+  pause
+  exit /b 2
+)
+if not exist "%SKILL_DEST%" mkdir "%SKILL_DEST%"
+xcopy "%SKILL_SOURCE%\*" "%SKILL_DEST%" /E /I /Q /Y >nul
+if errorlevel 1 (
+  echo [ERROR] Copy failed. Check permissions and disk space.
+  pause
+  exit /b 1
+)
+if not exist "%SKILL_DEST%\SKILL.md" (
+  echo [ERROR] Destination missing SKILL.md.
+  pause
+  exit /b 1
+)
+echo [OK] Installed to "%SKILL_DEST%".
+echo Restart Codex and invoke $visual-story-site.
+pause

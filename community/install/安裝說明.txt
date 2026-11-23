@@ -1,0 +1,16 @@
+安裝：視覺敘事網站技能（Codex / 相容 Agent Skills）
+
+ZIP 內容有 1 個技能資料夾 `visual-story-site-skill`，含 SKILL.md、agents/、references/、scripts/、assets/ 和 install/。
+
+Windows（不需要管理員權限）：
+1. 將 ZIP 解壓到一般資料夾，勿直接在壓縮檔內執行。
+2. 在 install 內將 `PC_rename.bat.txt` 改名成 `PC_rename.bat`，執行它；這會把 `PC_install.bat.txt` 複製為 `PC_install.bat`。
+3. 執行 `PC_install.bat`；安裝至 `%CODEX_HOME%\skills\visual-story-site`；若未設定 CODEX_HOME，預設為 `%USERPROFILE%\.codex\skills\visual-story-site`。
+4. 重新啟動 Codex，輸入：`使用 $visual-story-site，以我的素材建立動態作品集網站`。
+
+macOS / Linux：
+將 `visual-story-site-skill` 資料夾複製到 `${CODEX_HOME:-$HOME/.codex}/skills/visual-story-site`，再重新開啟 Codex。
+
+不使用 Codex：將 SKILL.md 及 references 交給支援 Agent Skills 的編程代理使用。此技能不會自動安裝在 ChatGPT 帳號或外部服務。
+
+注意：本技能不內附影片中人物的原始圖檔或影片，也不包含付費圖像生成 API；生圖、部署和實際使用仍依環境工具及授權。

@@ -1,54 +1,56 @@
-<!doctype html>
-<html lang="zh-Hant">
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090c15">
-  <meta name="description" content="NOVA STUDIO：以角色、場景與互動敘事創造具有辨識度的數位作品。這是本技能提供的原創示範網站。">
-  <title>NOVA STUDIO | Visual Storytelling Demo</title>
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./app.js" defer></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#090c15" name="theme-color"/>
+<meta content="NOVA STUDIO is an original demonstration of character, scenes and interactive visual storytelling." data-i18n-content="pageDescription" name="description"/>
+<title data-i18n="pageTitle">NOVA STUDIO | Visual Storytelling Demo</title>
+<link href="./styles.css" rel="stylesheet"/>
+<script defer="" src="./i18n.js"></script><script defer="" src="./app.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">跳到主要內容</a>
-  <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
-  <header class="site-header">
-    <a href="#top" class="logo" aria-label="NOVA STUDIO，返回首頁"><span class="logo-mark">N</span>NOVA<span class="logo-point">.</span></a>
-    <button class="nav-toggle" id="navToggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="開啟導覽選單"><span></span><span></span></button>
-    <nav id="primaryNav" class="nav" aria-label="主選單">
-      <a href="#work">作品</a><a href="#approach">設計方法</a><a href="#about">關於</a><a class="nav-contact" href="#contact">探索合作 <span aria-hidden="true">↗</span></a>
-    </nav>
-  </header>
-  <main id="main">
-    <section id="top" class="hero" aria-labelledby="heroTitle">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="signal"></span> Visual storytelling · Demonstration</p>
-        <h1 id="heroTitle">WE CREATE<br><em>WORLDS</em><span class="period">.</span></h1>
-        <p class="hero-zh">讓視覺成為故事，<br>讓體驗不只停在畫面。</p>
-        <p class="hero-descr">將原創角色、材質、場景與動態節奏，整合為可以真正探索的數位作品。</p>
-        <div class="hero-actions"><a class="pill pill-primary" href="#work">查看示範作品 <span aria-hidden="true">↗</span></a><a class="sub-link" href="#approach">了解設計方法 <span aria-hidden="true">↓</span></a></div>
-      </div>
-      <div class="hero-art" role="img" aria-label="原創抽象球體與霓虹曲線構成的未來感視覺，不使用外部圖片">
-        <div class="art-halo halo-one"></div><div class="art-halo halo-two"></div><div class="art-orb"><div class="orb-core"></div></div>
-        <div class="art-label label-top"><span>01 / ORIGINAL</span><span>VISUAL ENGINE</span></div>
-        <div class="art-label label-bottom"><span>FORM × MOTION</span><span>EVERY DETAIL MATTERS</span></div>
-      </div>
-      <div class="hero-foot"><span>DESIGN FOR WHAT'S NEXT</span><a href="#work" aria-label="向下捲動至作品">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a><span>EST. NOW / STUDIO DEMO</span></div>
-    </section>
-    <section class="statement section-shell" aria-labelledby="statementTitle"><p class="section-index">01 / MINDSET</p><h2 id="statementTitle">不只是漂亮，<br><span class="muted">而是有記憶點的體驗。</span></h2><p>從單一主視覺延伸出連貫的角色宇宙，讓網站的每個區段都屬於同一個故事。</p></section>
-    <section id="work" class="work section-shell" aria-labelledby="workTitle"><div class="section-heading"><div><p class="section-index">02 / SELECTED CONCEPTS</p><h2 id="workTitle">實驗性的<span class="accent">視覺語言</span></h2></div><span class="side-note">以下皆為技能內建的原創概念示範，非客戶案例。</span></div>
-      <div class="filterbar" role="group" aria-label="作品分類"><button class="filter active" type="button" data-filter="all" aria-pressed="true">全部 <sup>03</sup></button><button class="filter" type="button" data-filter="character" aria-pressed="false">角色</button><button class="filter" type="button" data-filter="environment" aria-pressed="false">場景</button><button class="filter" type="button" data-filter="motion" aria-pressed="false">動態</button></div>
-      <div class="work-grid" id="workGrid">
-        <article class="project-card card-one" data-category="character"><div class="project-art"><div class="geo geo-a"></div><span class="card-no">NO. 001</span><span class="card-stamp">CHARACTER STUDY</span></div><div class="project-meta"><div><span class="small-label">角色／識別</span><h3>FORM / IDENTITY</h3></div><span class="detail-mark" aria-hidden="true">↗</span></div><p class="project-desc">以比例、色彩與形體建立跨場景一致的角色系統。</p></article>
-        <article class="project-card card-two" data-category="environment"><div class="project-art"><div class="geo geo-b"></div><span class="card-no">NO. 002</span><span class="card-stamp">WORLD BUILDING</span></div><div class="project-meta"><div><span class="small-label">場景／氣氛</span><h3>AFTER THE LIGHT</h3></div><span class="detail-mark" aria-hidden="true">↗</span></div><p class="project-desc">用光線、材質與構圖讓畫面有明確情緒和敘事。</p></article>
-        <article class="project-card card-three" data-category="motion"><div class="project-art"><div class="geo geo-c"></div><span class="card-no">NO. 003</span><span class="card-stamp">MOTION EXPERIMENT</span></div><div class="project-meta"><div><span class="small-label">互動／節奏</span><h3>THE MOTION FIELD</h3></div><span class="detail-mark" aria-hidden="true">↗</span></div><p class="project-desc">以可控制的網頁互動呈現動勢，並保留靜態體驗。</p></article>
-      </div><p class="empty-state" id="emptyState" hidden>這個分類目前沒有展示項目。</p>
-    </section>
-    <section id="approach" class="approach section-shell" aria-labelledby="approachTitle"><p class="section-index">03 / HOW WE BUILD</p><div class="approach-head"><h2 id="approachTitle">ONE CHARACTER.<br><span class="accent">MANY STORIES.</span></h2><p>以相同的角色與視覺系統，串接素材、動效、介面與裝置。</p></div><div class="steps"><div><span>01</span><h3>角色與素材</h3><p>先固定外觀，再做多視角與場景圖。</p></div><div><span>02</span><h3>敘事與動態</h3><p>每一段動效都服務資訊與情緒。</p></div><div><span>03</span><h3>真正可用的網頁</h3><p>手機優先，兼顧操作與載入效率。</p></div></div></section>
-    <section id="about" class="about section-shell" aria-labelledby="aboutTitle"><p class="section-index">04 / BEYOND THE SURFACE</p><div><h2 id="aboutTitle">BUILD AN<br><span class="outline">IMPRESSION.</span></h2><p>一個令人記得的網站，不需要依賴炫目的特效，而需要一致的角色世界、合理的節奏與清楚的互動。</p></div></section>
-    <section id="contact" class="contact section-shell" aria-labelledby="contactTitle"><p class="section-index">05 / NEXT CHAPTER</p><h2 id="contactTitle">READY TO<br><span>MAKE IT REAL?</span></h2><p>這是一個可以運作、可以改編的示範網站。要製作實際專案，請交給技能原始素材與品牌內容。</p><a class="pill pill-dark" href="#top">回到首頁 <span aria-hidden="true">↑</span></a></section>
-  </main>
-  <footer class="footer"><div class="logo"><span class="logo-mark">N</span>NOVA<span class="logo-point">.</span></div><p>VISUAL STORY SITE / ORIGINAL STARTER DEMO</p><p>© 2026 NOVA CONCEPT</p></footer>
+<a class="skip-link" data-i18n="skip" href="#main">Skip to main content</a>
+<div aria-hidden="true" class="reading-progress" id="readingProgress"></div>
+<header class="site-header">
+<a aria-label="NOVA STUDIO, back to top" class="logo" data-i18n-aria-label="logoAria" href="#top"><span class="logo-mark">N</span>NOVA<span class="logo-point">.</span></a>
+<div class="language-wrap"><label class="sr-only" data-i18n="languageLabel" for="languageSelect">Choose language</label><select aria-label="Choose language" data-i18n-aria-label="languageLabel" id="languageSelect" name="language"><option value="en">English</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option></select><span aria-hidden="true" class="language-caret">⌄</span></div><button aria-controls="primaryNav" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" data-i18n-aria-label="openMenu" id="navToggle" type="button"><span></span><span></span></button>
+<nav aria-label="Main navigation" class="nav" data-i18n-aria-label="navAria" id="primaryNav">
+<a data-i18n="navWork" href="#work">Work</a><a data-i18n="navApproach" href="#approach">Our Process</a><a data-i18n="navAbout" href="#about">About</a><a class="nav-contact" data-i18n-html="navContact" href="#contact">Explore Collaboration <span aria-hidden="true">↗</span></a>
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="heroTitle" class="hero" id="top">
+<div aria-hidden="true" class="hero-grid"></div>
+<div class="hero-copy">
+<p class="eyebrow" data-i18n-html="eyebrow"><span class="signal"></span> Visual storytelling · Demonstration</p>
+<h1 data-i18n-html="heroTitle" id="heroTitle">WE CREATE<br/><em>WORLDS</em><span class="period">.</span></h1>
+<p class="hero-zh" data-i18n-html="heroTag">Give visuals a story.<br/>Give every experience a purpose.</p>
+<p class="hero-descr" data-i18n="heroDesc">Original characters, textures, scenes and motion come together in digital experiences you can actually explore.</p>
+<div class="hero-actions"><a class="pill pill-primary" data-i18n-html="heroPrimary" href="#work">Explore the Demo <span aria-hidden="true">↗</span></a><a class="sub-link" data-i18n-html="heroSecondary" href="#approach">Our Process <span aria-hidden="true">↓</span></a></div>
+</div>
+<div aria-label="Original abstract glass orb and neon curves, rendered entirely in CSS." class="hero-art" data-i18n-aria-label="heroArtAria" role="img">
+<div class="art-halo halo-one"></div><div class="art-halo halo-two"></div><div class="art-orb"><div class="orb-core"></div></div>
+<div class="art-label label-top"><span>01 / ORIGINAL</span><span>VISUAL ENGINE</span></div>
+<div class="art-label label-bottom"><span>FORM × MOTION</span><span>EVERY DETAIL MATTERS</span></div>
+</div>
+<div class="hero-foot"><span data-i18n="footLine">DESIGN FOR WHAT'S NEXT</span><a aria-label="Scroll to selected work" data-i18n-aria-label="scrollAria" data-i18n-html="footScroll" href="#work">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a><span data-i18n="footEst">EST. NOW / STUDIO DEMO</span></div>
+</section>
+<section aria-labelledby="statementTitle" class="statement section-shell"><p class="section-index">01 / MINDSET</p><h2 data-i18n-html="statementTitle" id="statementTitle">NOT JUST BEAUTIFUL.<br/><span class="muted">TRULY MEMORABLE.</span></h2><p data-i18n="statementDesc">Create a consistent visual universe from a single key visual, so every section of a website tells the same story.</p></section>
+<section aria-labelledby="workTitle" class="work section-shell" id="work"><div class="section-heading"><div><p class="section-index">02 / SELECTED CONCEPTS</p><h2 data-i18n-html="workTitle" id="workTitle">EXPERIMENTAL <span class="accent">VISUALS</span></h2></div><span class="side-note" data-i18n="workNote">Original concept studies included with this skill. Not client work.</span></div>
+<div aria-label="Filter projects" class="filterbar" data-i18n-aria-label="filterAria" role="group"><button aria-pressed="true" class="filter active" data-filter="all" data-i18n-html="filterAll" type="button">All <sup>03</sup></button><button aria-pressed="false" class="filter" data-filter="character" data-i18n="filterCharacter" type="button">Characters</button><button aria-pressed="false" class="filter" data-filter="environment" data-i18n="filterEnvironment" type="button">Environments</button><button aria-pressed="false" class="filter" data-filter="motion" data-i18n="filterMotion" type="button">Motion</button></div>
+<div class="work-grid" id="workGrid">
+<article class="project-card card-one" data-category="character"><div class="project-art"><div class="geo geo-a"></div><span class="card-no">NO. 001</span><span class="card-stamp">CHARACTER STUDY</span></div><div class="project-meta"><div><span class="small-label" data-i18n="card1Label">CHARACTER / IDENTITY</span><h3>FORM / IDENTITY</h3></div><span aria-hidden="true" class="detail-mark">↗</span></div><p class="project-desc" data-i18n="card1Desc">Build consistent characters across scenes through proportions, color and form.</p></article>
+<article class="project-card card-two" data-category="environment"><div class="project-art"><div class="geo geo-b"></div><span class="card-no">NO. 002</span><span class="card-stamp">WORLD BUILDING</span></div><div class="project-meta"><div><span class="small-label" data-i18n="card2Label">SCENES / ATMOSPHERE</span><h3>AFTER THE LIGHT</h3></div><span aria-hidden="true" class="detail-mark">↗</span></div><p class="project-desc" data-i18n="card2Desc">Use light, materials and composition to establish emotion and narrative.</p></article>
+<article class="project-card card-three" data-category="motion"><div class="project-art"><div class="geo geo-c"></div><span class="card-no">NO. 003</span><span class="card-stamp">MOTION EXPERIMENT</span></div><div class="project-meta"><div><span class="small-label" data-i18n="card3Label">INTERACTION / MOTION</span><h3>THE MOTION FIELD</h3></div><span aria-hidden="true" class="detail-mark">↗</span></div><p class="project-desc" data-i18n="card3Desc">Communicate motion through controllable web interactions while preserving a static fallback.</p></article>
+</div><p class="empty-state" data-i18n="emptyState" hidden="" id="emptyState">Nothing in this category yet.</p>
+</section>
+<section aria-labelledby="approachTitle" class="approach section-shell" id="approach"><p class="section-index">03 / HOW WE BUILD</p><div class="approach-head"><h2 data-i18n-html="approachTitle" id="approachTitle">ONE CHARACTER.<br/><span class="accent">MANY STORIES.</span></h2><p data-i18n="approachDesc">One shared character and visual system connects assets, motion, interfaces and devices.</p></div><div class="steps"><div><span>01</span><h3 data-i18n="step1Title">Characters &amp; Assets</h3><p data-i18n="step1Desc">Lock in the visual identity before generating viewpoints and scenes.</p></div><div><span>02</span><h3 data-i18n="step2Title">Story &amp; Motion</h3><p data-i18n="step2Desc">Every animation serves information and emotion.</p></div><div><span>03</span><h3 data-i18n="step3Title">Real Websites</h3><p data-i18n="step3Desc">Mobile-first interactions with performance in mind.</p></div></div></section>
+<section aria-labelledby="aboutTitle" class="about section-shell" id="about"><p class="section-index">04 / BEYOND THE SURFACE</p><div><h2 data-i18n-html="aboutTitle" id="aboutTitle">BUILD AN<br/><span class="outline">IMPRESSION.</span></h2><p data-i18n="aboutDesc">A memorable site is not about excessive effects. It needs a coherent visual universe, thoughtful rhythm and clear interactions.</p></div></section>
+<section aria-labelledby="contactTitle" class="contact section-shell" id="contact"><p class="section-index">05 / NEXT CHAPTER</p><h2 data-i18n-html="contactTitle" id="contactTitle">READY TO<br/><span>MAKE IT REAL?</span></h2><p data-i18n="contactDesc">This is an original, functional starter website. For a real project, provide the skill with your own assets and brand content.</p><a class="pill pill-dark" data-i18n-html="backTop" href="#top">Back to Top <span aria-hidden="true">↑</span></a></section>
+</main>
+<footer class="footer"><div class="logo"><span class="logo-mark">N</span>NOVA<span class="logo-point">.</span></div><p data-i18n="footerLabel">VISUAL STORY SITE / ORIGINAL STARTER DEMO</p><p>© 2026 NOVA CONCEPT</p></footer>
 </body>
 </html>
+

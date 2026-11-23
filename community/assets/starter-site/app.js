@@ -5,8 +5,8 @@ const progress=document.querySelector('#readingProgress');
 const filters=[...document.querySelectorAll('[data-filter]')];
 const cards=[...document.querySelectorAll('.project-card')];
 const empty=document.querySelector('#emptyState');
-function closeMenu(){nav.classList.remove('open');navToggle.setAttribute('aria-expanded','false');navToggle.setAttribute('aria-label','開啟導覽選單');}
-navToggle.addEventListener('click',()=>{const opening=!nav.classList.contains('open');nav.classList.toggle('open',opening);navToggle.setAttribute('aria-expanded',String(opening));navToggle.setAttribute('aria-label',opening?'關閉導覽選單':'開啟導覽選單');});
+function closeMenu(){nav.classList.remove('open');navToggle.setAttribute('aria-expanded','false');navToggle.setAttribute('aria-label',window.VisualStoryI18n?.translate('openMenu')||'Open navigation menu');}
+navToggle.addEventListener('click',()=>{const opening=!nav.classList.contains('open');nav.classList.toggle('open',opening);navToggle.setAttribute('aria-expanded',String(opening));navToggle.setAttribute('aria-label',window.VisualStoryI18n?.translate(opening?'closeMenu':'openMenu')||(opening?'Close navigation menu':'Open navigation menu'));});
 nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav.classList.contains('open')){closeMenu();navToggle.focus();}});
 window.addEventListener('resize',()=>{if(window.innerWidth>760)closeMenu();});

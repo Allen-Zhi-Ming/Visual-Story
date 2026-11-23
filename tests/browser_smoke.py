@@ -50,6 +50,9 @@ async def check(browser,mode,base_url,width,which,errors):
   await load_page(page,which,mode,base_url)
   assert await page.locator('html').get_attribute('lang')=='en', (which,width,'English default')
   sizes=await page.evaluate("()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth})")
+  if sizes['scroll']>sizes['client']+1:
+   overflow=await page.evaluate("""() => [...document.querySelectorAll('body *')].map(e => ({tag:e.tagName,cls:(typeof e.className==='string'?e.className:'').slice(0,90),text:(e.innerText||'').slice(0,45),right:Math.round(e.getBoundingClientRect().right),left:Math.round(e.getBoundingClientRect().left),scroll:e.scrollWidth})).filter(e=>e.right>document.documentElement.clientWidth+2).sort((a,b)=>b.right-a.right).slice(0,12)""")
+   print('OVERFLOW_DIAGNOSTIC',which,width,sizes,overflow,flush=True)
   assert sizes['scroll']<=sizes['client']+1,(which,width,sizes)
   selector='#languageSelect' if which=='main' else '#demoLanguage'
   await page.select_option(selector,'zh-CN')

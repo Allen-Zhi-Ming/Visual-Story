@@ -8,3 +8,16 @@
 @media(max-width:760px){.hero-art{top:51%;opacity:.78}.label-top{display:none}}
 @media(max-width:380px){.hero-art{top:54%;opacity:.7}}
 @media(max-width:760px){.label-bottom{display:none}}
+
+/* Internationalization: compact and keyboard-accessible locale selection. */
+.header-controls{display:flex;align-items:center;gap:10px}
+.language-wrap{position:relative;flex:0 0 auto;margin-left:auto}
+.language-wrap select{appearance:none;-webkit-appearance:none;color:#eff5e8;background:#17212d;border:1px solid #72856c7f;border-radius:99px;padding:10px 29px 10px 14px;font-size:12px;font-weight:650;min-width:108px;max-width:134px;line-height:1.5;cursor:pointer}
+.language-wrap select:hover{border-color:var(--accent)}
+.language-wrap select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.language-wrap option{background:#17212d;color:#f5f8f3}
+.language-caret{position:absolute;right:13px;top:50%;transform:translateY(-58%);color:var(--accent);pointer-events:none;font-size:16px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.nav{margin-left:0}
+@media(max-width:760px){.site-header{gap:8px}.language-wrap{margin-left:auto}.language-wrap select{min-width:105px;font-size:11px;padding:9px 22px 9px 11px}.language-caret{right:9px}.hero-copy h1{white-space:normal;line-height:1.05}.hero-copy h1 em{white-space:nowrap}}
+@media(max-width:380px){.site-header{padding:17px 15px}.logo{font-size:18px}.language-wrap select{min-width:99px}.nav-toggle{flex:0 0 41px}}

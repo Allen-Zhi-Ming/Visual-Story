@@ -167,9 +167,9 @@ const VISUAL_STORY_TRANSLATIONS = {
     "zh-CN": "角色／作品集"
   },
   "card1Desc": {
-    "en": "Change scenes and poses in an original character universe.",
-    "zh-TW": "切換不同場景與姿勢，探索原創角色作品集。",
-    "zh-CN": "切换不同场景与姿势，探索原创角色作品集。"
+    "en": "Explore lighting and crop treatments of one AI editorial portrait.",
+    "zh-TW": "切換光線與裁切處理，探索同一張原創 AI 肖像。",
+    "zh-CN": "切换光线与裁切处理，探索同一张原创 AI 肖像。"
   },
   "card2Label": {
     "en": "BRAND / CAMPAIGN",
@@ -177,9 +177,9 @@ const VISUAL_STORY_TRANSLATIONS = {
     "zh-CN": "品牌／形象网站"
   },
   "card2Desc": {
-    "en": "Explore an editorial campaign with real collection switching.",
-    "zh-TW": "以可切換系列的編輯式網站展示品牌形象。",
-    "zh-CN": "以可切换系列的编辑式网站展示品牌形象。"
+    "en": "Explore a fashion editorial identity through three color treatments.",
+    "zh-TW": "透過三種色彩風格，展示編輯式時尚品牌形象。",
+    "zh-CN": "通过三种色彩风格，展示编辑式时尚品牌形象。"
   },
   "card3Label": {
     "en": "PRODUCT / COMMERCE DEMO",

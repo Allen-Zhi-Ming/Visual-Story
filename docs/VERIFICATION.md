@@ -37,3 +37,10 @@ Three languages have been added to repository documentation and the starter site
 - **PASS (embedded browser simulation):** Chromium interactive language switching, filters and mobile navigation at widths **320 / 390 / 768 / 1440 px**, all with no horizontal overflow (16 locale-and-viewport measurements).
 - **BLOCKED for real URL reload persistence:** environment disallowed browser navigation to test URL. The locale storage code is implemented but reload persistence has not been verified through a real served origin here.
 - **NOT_RUN:** Windows installer and production hosting.
+
+## Visual quality revision — v1.3 candidate (2026-11-24)
+
+- Original SVG/CSS-only character, perfume bottle and jacket visuals have been replaced with three original AI concept images and distinct editorial layouts. This does **not** constitute evidence of real merchandise, brand clients or a general-purpose visual generator.
+- QA (local): Python skill 4/4 PASS, translations 4/4 PASS, static integrity 4/4 PASS; four-page site checker PASS; `node --check` PASS; Chromium inline-mode 16/16 screen/interaction checks PASS (320, 390, 768, 1440px).
+- Browser media-load screenshot smoke: 390/1440px local DOM previews rendered with inlined WebP assets; images decoded and no horizontal overflow. **Not equivalent to a real network-loaded production E2E**.
+- localhost HTTP navigation: BLOCKED by the execution environment. GitHub CI HTTP browser test and remote production test still need independent verification on the exact PR commit.

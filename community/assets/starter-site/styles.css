@@ -39,3 +39,12 @@
 }
 /* Decorative orbit art may exceed the viewport; content must not scroll sideways. */
 html,body{overflow-x:clip}
+
+/* Editorial previews for the three Visual Story studies. */
+.project-card .project-art{background-size:cover;background-position:center;border-radius:4px}
+.project-card .project-art::after{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,#0005,transparent 35%,#0009)}
+.project-card .geo{display:none}
+.project-card .card-no,.project-card .card-stamp{z-index:2}
+.project-card.card-one .project-art{background-image:url('./media/echo-editorial.webp');background-position:67% center}
+.project-card.card-two .project-art{background-image:url('./media/vale-editorial.webp');background-position:center 26%}
+.project-card.card-three .project-art{background-image:url('./media/aura-product.webp');background-position:center 26%;background-color:#172420}

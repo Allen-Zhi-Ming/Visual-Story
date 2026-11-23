@@ -22,6 +22,9 @@ Visual Story turns supplied characters, product imagery, moodboards and brand as
 
 ---
 
+
+> **Visual refresh (v1.3 candidate):** The three showcases now use distinct editorial layouts and original AI-generated concept images. They are visual/product-design examples, **not verified products, commercial client case studies, or a working checkout**. See [visual provenance](docs/VISUAL-PROVENANCE.md).
+
 ## ✦ Showcase — Original Demo
 
 <p align="center"><img src="docs/media/visual-story-demo-preview.svg" alt="NOVA original concept — desktop and mobile responsive design" width="100%" /></p>

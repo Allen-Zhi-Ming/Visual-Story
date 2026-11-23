@@ -34,7 +34,7 @@ async def load_page(page,which,mode,base_url):
    css=(SITE/'styles.css').read_text(encoding='utf-8')
    scripts=[(SITE/'i18n.js').read_text(encoding='utf-8'),(SITE/'app.js').read_text(encoding='utf-8')]
   else:
-   css=(SITE/'showcase/showcase.css').read_text(encoding='utf-8')
+   css=(SITE/'showcase/showcase.css').read_text(encoding='utf-8')+'\n'+(SITE/'showcase/premium.css').read_text(encoding='utf-8')
    scripts=[(SITE/'showcase/showcase.js').read_text(encoding='utf-8')]
   import re
   text=re.sub(r'<link\s[^>]*rel="stylesheet"[^>]*>',f'<style>{css}</style>',text)
@@ -61,6 +61,9 @@ async def check(browser,mode,base_url,width,which,errors):
   assert await page.locator('html').get_attribute('lang')=='zh-TW'
   await page.select_option(selector,'en')
   assert await page.locator('html').get_attribute('lang')=='en'
+  if which!='main' and mode=='http':
+   imgs=await page.locator('main img').evaluate_all('(nodes) => nodes.map(el => ({src:el.getAttribute("src"),width:el.naturalWidth}))')
+   assert imgs and all(item['width']>0 for item in imgs),(which,'failed image load',imgs)
   if which=='main':
    await page.locator('[data-filter="brand"]').click()
    assert await page.locator('.project-card:not([hidden])').count()==1

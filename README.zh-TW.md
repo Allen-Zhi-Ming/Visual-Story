@@ -1,9 +1,9 @@
-<!-- Visual Story · zh-TW · Community v1.1.0 -->
+<!-- Visual Story · zh-TW · Community v1.3.0 -->
 <div align="center">
 <a href="community/SKILL.md"><img src="docs/media/visual-story-hero.svg" width="100%" alt="Visual Story — From imagination to interaction." /></a>
 <br/><br/>
 <a href="community/SKILL.md"><img alt="Agent Skill" src="https://img.shields.io/badge/AI-Agent%20Skill-BFFF70?style=for-the-badge&labelColor=152032" /></a>
-<a href="community/README.md"><img alt="Version" src="https://img.shields.io/badge/Release-Community%20v1.1.0-7CCBFF?style=for-the-badge&labelColor=152032" /></a>
+<a href="community/README.md"><img alt="Version" src="https://img.shields.io/badge/Release-Community%20v1.3.0-7CCBFF?style=for-the-badge&labelColor=152032" /></a>
 <a href="docs/VERIFICATION.zh-TW.md"><img alt="Baseline tests" src="https://img.shields.io/badge/Tests-4%2F4%20PASS-7DE2A4?style=for-the-badge&labelColor=152032" /></a>
 <a href="docs/LICENSING.md"><img alt="License pending" src="https://img.shields.io/badge/License-Pending-FFCE80?style=for-the-badge&labelColor=152032" /></a>
 <br/>
@@ -22,11 +22,18 @@ Visual Story 將角色、商品圖片、視覺參考及品牌素材，整理成�
 
 ---
 
-## ✦ 作品預覽 — 原創示範
+## ✦ 線上展示 — v1.3.0
 
-<p align="center"><img src="docs/media/visual-story-demo-preview.svg" alt="NOVA original concept — desktop and mobile responsive design" width="100%" /></p>
+三個以不同設計語言製作的原創概念案例，已發布到 Vercel：
 
-> 這是 **NOVA 原創示範網站**，不是客戶案例，也不是影片原作者網站的複製品。圖片是排版示意圖，並非公開正式網站的瀏覽器截圖；可在下載後開啟 `index.html`。
+<table><tr>
+<td width="33%" align="center"><a href="https://visual-story-six.vercel.app/showcase/character.html"><img src="community/assets/starter-site/media/echo-editorial.webp" alt="ECHO 原創 AI 時尚人物概念" width="100%"/></a><br/><b><a href="https://visual-story-six.vercel.app/showcase/character.html">ECHO · 角色</a></b><br/><sub>時尚攝影排版與取景切換</sub></td>
+<td width="33%" align="center"><a href="https://visual-story-six.vercel.app/showcase/brand.html"><img src="community/assets/starter-site/media/vale-editorial.webp" alt="VALE 原創時尚概念視覺" width="100%"/></a><br/><b><a href="https://visual-story-six.vercel.app/showcase/brand.html">VALE · 品牌</a></b><br/><sub>精品編輯排版與系列主題</sub></td>
+<td width="33%" align="center"><a href="https://visual-story-six.vercel.app/showcase/product.html"><img src="community/assets/starter-site/media/aura-product.webp" alt="AURA 原創 AI 概念外套" width="100%"/></a><br/><b><a href="https://visual-story-six.vercel.app/showcase/product.html">AURA · 商品</a></b><br/><sub>概念商品介面與示範購物袋</sub></td>
+</tr></table>
+
+> 圖片、人物與商品均屬**虛構 AI 概念素材**；切換顏色與取景不等於產生真實商品，也沒有實際結帳、出貨或經驗證的庫存。[素材來源與限制](docs/VISUAL-PROVENANCE.md)。
+
 
 ## ✦ Community 已提供的功能
 
@@ -109,7 +116,7 @@ Visual-Story/
 | 手機／電腦版 | **PASS（受限模擬）** | 基線 320/390/768/1440 px |
 | 多語系檢查 | **4/4 PASS** | 預設英文、三語文件、連結有效 |
 | 真實 URL 載入 | **基線 BLOCKED** | 環境限制，未標為通過 |
-| Windows 安裝／正式部署 | **NOT_RUN** | 不宣稱已完成 |
+| Windows 安裝 | **NOT_RUN** | 不宣稱已完成 |
 
 
 [Full evidence record](docs/VERIFICATION.zh-TW.md)
@@ -131,7 +138,7 @@ Visual Story Community 是 **source-available 公開預覽**，尚未套用 MIT�
 
 ## 三個互動示範與品質檢查 · P0–P2
 
-ECHO 角色作品集可切換場景與姿勢；VALE 品牌形象可切換系列；AURA 商品展示可選擇顏色、尺寸、數量與示範購物袋（不含付款及出貨）。三個案例皆為原創虛構展示，英文預設並支援簡體／繁體。
+ECHO 角色作品集可切換場景氛圍與取景；VALE 品牌形象可切換系列；AURA 商品展示可選擇顏色、尺寸、數量與示範購物袋（不含付款及出貨）。三個案例皆為原創虛構展示，英文預設並支援簡體／繁體。
 
 - [ECHO — Character](community/assets/starter-site/showcase/character.html)
 - [VALE — Brand](community/assets/starter-site/showcase/brand.html)

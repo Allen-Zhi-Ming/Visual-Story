@@ -33,3 +33,12 @@ Community 包含核心示範網站、素材清單工具、網站靜態檢查、�
 - **PASS（內嵌瀏覽器模擬）：** Chromium 驗證 320／390／768／1440 px，英文／簡體／繁體切換、作品分類與手機選單，16 組量測無橫向溢出。
 - **BLOCKED：** 透過真實網址重新整理測試語言保存，測試環境禁止連線；儲存功能已實作，但本次未完成真實來源重載驗證。
 - **NOT_RUN：** Windows 原生安裝及正式網站部署。
+
+## v1.3.0 正式部署核對（2026-11-24）
+
+- **PASS：** PR #5 的 GitHub Actions [45292883801](https://github.com/Allen-Zhi-Ming/Visual-Story/actions/runs/45292883801)，包含真實 HTTP 網頁瀏覽器測試。
+- **PASS：** 合併後 main 的 Actions [45296636357](https://github.com/Allen-Zhi-Ming/Visual-Story/actions/runs/45296636357)。
+- **READY：** Vercel 正式部署 `dpl_6Cd9pFGeyfY9AgVs3RKvtiBB6JHr`，commit `dd52bce7`，已綁定 https://visual-story-six.vercel.app/。
+- **BLOCKED：** 此作業環境無法直接存取公開網址，因此 READY 不能冒充外網端到端實測。
+- **NOT_RUN：** Windows 安裝測試、真實收款與商品、AI 自動生圖服務。
+- 回滾點：`99f42a8`。

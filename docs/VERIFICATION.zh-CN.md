@@ -26,3 +26,12 @@
 - **PASS（内嵌浏览器模拟）：** Chromium 验证 320／390／768／1440 px，英文／简体／繁体切换、作品筛选及手机导航，16 组测试无横向溢出。
 - **BLOCKED：** 通过真实网址重新加载以验证语言持久化，环境禁止连接；存储功能已实现，但本次没有完成真实来源的重新加载验证。
 - **NOT_RUN：** Windows 原生安装及正式网站部署。
+
+## v1.3.0 正式部署核对（2026-11-24）
+
+- **PASS：** PR #5 的 GitHub Actions [45292883801](https://github.com/Allen-Zhi-Ming/Visual-Story/actions/runs/45292883801)，含真实 HTTP 页面浏览器测试。
+- **PASS：** 合并后的 main Actions [45296636357](https://github.com/Allen-Zhi-Ming/Visual-Story/actions/runs/45296636357)。
+- **READY：** Vercel 正式部署 `dpl_6Cd9pFGeyfY9AgVs3RKvtiBB6JHr`，commit `dd52bce7`，绑定 https://visual-story-six.vercel.app/。
+- **BLOCKED：** 本次独立环境无法直接访问公开网址，不能把 READY 当作外网端到端实测。
+- **NOT_RUN：** Windows 安装测试、真实付款、真实商品和自动 AI 生图服务。
+- 回滚点：`99f42a8`。

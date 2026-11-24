@@ -38,9 +38,18 @@ Three languages have been added to repository documentation and the starter site
 - **BLOCKED for real URL reload persistence:** environment disallowed browser navigation to test URL. The locale storage code is implemented but reload persistence has not been verified through a real served origin here.
 - **NOT_RUN:** Windows installer and production hosting.
 
-## Visual quality revision — v1.3 candidate (2026-11-24)
+## Visual quality revision — v1.3 release (2026-11-24)
 
 - Original SVG/CSS-only character, perfume bottle and jacket visuals have been replaced with three original AI concept images and distinct editorial layouts. This does **not** constitute evidence of real merchandise, brand clients or a general-purpose visual generator.
 - QA (local): Python skill 4/4 PASS, translations 4/4 PASS, static integrity 4/4 PASS; four-page site checker PASS; `node --check` PASS; Chromium inline-mode 16/16 screen/interaction checks PASS (320, 390, 768, 1440px).
 - Browser media-load screenshot smoke: 390/1440px local DOM previews rendered with inlined WebP assets; images decoded and no horizontal overflow. **Not equivalent to a real network-loaded production E2E**.
 - localhost HTTP navigation: BLOCKED by the execution environment. GitHub CI HTTP browser test and remote production test still need independent verification on the exact PR commit.
+
+## Production verification — v1.3.0 (2026-11-24)
+
+- **PASS:** GitHub PR #5 `cfc7b5fe75b7442ab8f184871c38ff1eeccfbeec`, workflow [45292883801](https://github.com/Allen-Zhi-Ming/Visual-Story/actions/runs/45292883801), full Python/JavaScript checks and Chromium **real HTTP** browser E2E.
+- **PASS:** PR #5 squash-merged to main at `dd52bce7ae4b54d154a3824f5096017049561a59`; merged-main workflow [45296636357](https://github.com/Allen-Zhi-Ming/Visual-Story/actions/runs/45296636357) completed successfully.
+- **READY:** Vercel production deployment `dpl_6Cd9pFGeyfY9AgVs3RKvtiBB6JHr`, commit `dd52bce7`, alias https://visual-story-six.vercel.app/ assigned.
+- **BLOCKED:** direct external public-URL HTTP request from this assistant's execution environment failed due to network restrictions. A Vercel READY state and CI test of locally served pages are **not** a verified independent public-URL availability test.
+- **NOT_RUN:** actual Windows installer execution, payment integration, real merchandise purchasing or autonomous AI image-generation pipeline.
+- **Rollback:** prior production commit `99f42a8bab7718b0bfd71ca5f48fb03c6b0f2d86` and prior deployment `dpl_BbzHmsaJ8dax5jZoJ7x8gEyth3go`.

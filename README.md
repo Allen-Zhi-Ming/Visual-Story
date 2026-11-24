@@ -1,9 +1,9 @@
-<!-- Visual Story · en · Community v1.1.0 -->
+<!-- Visual Story · en · Community v1.3.0 -->
 <div align="center">
 <a href="community/SKILL.md"><img src="docs/media/visual-story-hero.svg" width="100%" alt="Visual Story — From imagination to interaction." /></a>
 <br/><br/>
 <a href="community/SKILL.md"><img alt="Agent Skill" src="https://img.shields.io/badge/AI-Agent%20Skill-BFFF70?style=for-the-badge&labelColor=152032" /></a>
-<a href="community/README.md"><img alt="Version" src="https://img.shields.io/badge/Release-Community%20v1.1.0-7CCBFF?style=for-the-badge&labelColor=152032" /></a>
+<a href="community/README.md"><img alt="Version" src="https://img.shields.io/badge/Release-Community%20v1.3.0-7CCBFF?style=for-the-badge&labelColor=152032" /></a>
 <a href="docs/VERIFICATION.md"><img alt="Baseline tests" src="https://img.shields.io/badge/Tests-4%2F4%20PASS-7DE2A4?style=for-the-badge&labelColor=152032" /></a>
 <a href="docs/LICENSING.md"><img alt="License pending" src="https://img.shields.io/badge/License-Pending-FFCE80?style=for-the-badge&labelColor=152032" /></a>
 <br/>
@@ -23,13 +23,19 @@ Visual Story turns supplied characters, product imagery, moodboards and brand as
 ---
 
 
-> **Visual refresh (v1.3 candidate):** The three showcases now use distinct editorial layouts and original AI-generated concept images. They are visual/product-design examples, **not verified products, commercial client case studies, or a working checkout**. See [visual provenance](docs/VISUAL-PROVENANCE.md).
+> **v1.3.0 is deployed:** Three editorial concept websites are now available on Vercel. This is an image-led demonstration, not a self-service website generator or paid product. [Verification](docs/VERIFICATION.md).
 
-## ✦ Showcase — Original Demo
+## ✦ Live Showcases — v1.3.0
 
-<p align="center"><img src="docs/media/visual-story-demo-preview.svg" alt="NOVA original concept — desktop and mobile responsive design" width="100%" /></p>
+Explore three distinct, original concept experiences, deployed on Vercel:
 
-> This is an **original NOVA starter concept**, not a client case study and not a reproduction of the reference video. The visual is a design illustration rather than a screenshot of a published live site. The demo can be opened locally with `index.html`.
+<table><tr>
+<td width="33%" align="center"><a href="https://visual-story-six.vercel.app/showcase/character.html"><img src="community/assets/starter-site/media/echo-editorial.webp" alt="ECHO — original AI fashion portrait" width="100%"/></a><br/><b><a href="https://visual-story-six.vercel.app/showcase/character.html">ECHO · Character</a></b><br/><sub>Editorial art direction and interactive framing</sub></td>
+<td width="33%" align="center"><a href="https://visual-story-six.vercel.app/showcase/brand.html"><img src="community/assets/starter-site/media/vale-editorial.webp" alt="VALE — original fashion editorial portrait" width="100%"/></a><br/><b><a href="https://visual-story-six.vercel.app/showcase/brand.html">VALE · Brand</a></b><br/><sub>Luxury editorial layout and collection themes</sub></td>
+<td width="33%" align="center"><a href="https://visual-story-six.vercel.app/showcase/product.html"><img src="community/assets/starter-site/media/aura-product.webp" alt="AURA — original AI conceptual jacket" width="100%"/></a><br/><b><a href="https://visual-story-six.vercel.app/showcase/product.html">AURA · Product</a></b><br/><sub>Concept product interface and demo shopping bag</sub></td>
+</tr></table>
+
+> All imagery, people and products are **fictional AI concepts**. Framing, colour themes and quantities are interactive demos, not generation of new products, verified SKUs or a functional checkout. [Asset provenance](docs/VISUAL-PROVENANCE.md).
 
 ## ✦ What Community Includes
 
@@ -138,9 +144,9 @@ These are **original, fictional, functioning concept pages**, not client project
 
 | Demonstration | Interaction | Source |
 | --- | --- | --- |
-| [ECHO — Character Portfolio](community/assets/starter-site/showcase/character.html) | Scene + pose switching | Self-contained vector concept |
-| [VALE — Brand Experience](community/assets/starter-site/showcase/brand.html) | Three editorial collection states | CSS design object |
-| [AURA — Product Showcase](community/assets/starter-site/showcase/product.html) | Color, size, quantity + local demo bag | Original SVG jacket; **no checkout** |
+| [ECHO — Character Portfolio](community/assets/starter-site/showcase/character.html) | Scene treatment + framing | AI editorial concept; CSS framing |
+| [VALE — Brand Experience](community/assets/starter-site/showcase/brand.html) | Three editorial collection states | AI editorial concept; theme filters |
+| [AURA — Product Showcase](community/assets/starter-site/showcase/product.html) | Color, size, quantity + local demo bag | AI product concept; **no checkout** |
 
 ## Deployment and quality gates · P0/P2
 
